@@ -7,6 +7,7 @@ function App() {
 
   return (
     <>
+    {/* Routes setup */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='details/:id' element={<ViewDetails  />} />

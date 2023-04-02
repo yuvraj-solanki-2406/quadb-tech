@@ -6,6 +6,7 @@ export default function ShowData({show}) {
   return (
     <>
         {
+            // Used to display the array result in Table
             show.map((curShow) => {
                 const {id, name, language, genres} = curShow.show;
                 const {average} = curShow.show.rating

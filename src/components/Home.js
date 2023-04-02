@@ -10,6 +10,7 @@ export default function Home() {
 
     }, [])
 
+    // Fetch the Data from API 
     async function fetchData() {
         let data = await fetch('https://api.tvmaze.com/search/shows?q=all');
         data = await data.json();
@@ -44,6 +45,7 @@ export default function Home() {
                             </tr>
                         </thead>
                         <tbody>
+                            {/* Called this Component to display the data from API in form of Array */}
                             <ShowData show={show}></ShowData>
                         </tbody>
                     </table>
