@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+// import ViewDetails from './components/ViewDetails';
 
-export default function ShowData({show  }) {
+export default function ShowData({show}) {
   return (
     <>
         {
@@ -15,7 +17,7 @@ export default function ShowData({show  }) {
                         <td>{language}</td>
                         <td>{genres[0]} and {genres[1]}</td>
                         <td>{average}</td>
-                        <td><button className="btn btn-primary">View Details</button></td>
+                        <td><Link to={`details/${id}`} className='btn btn-primary'>View Details</Link></td>
                     </tr>
                 )
             })
